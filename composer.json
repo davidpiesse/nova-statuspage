@@ -1,5 +1,5 @@
 {
-    "name": "davidpiesse/StatusPage",
+    "name": "davidpiesse/nova-statuspage",
     "description": "A Laravel Nova card.",
     "keywords": [
         "laravel",

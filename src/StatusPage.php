@@ -25,8 +25,10 @@ class StatusPage extends Card
 
     protected $service_list = [
         'cloudflare' => 'yh6f0r4529hb',
+        'dropbox' => 't34htyd6jblf',
         'newrelic' => '4qjjcrpdj8jh',
         'travisci' => 'travisci',
+        'twilio' => 'gpkpyklzq55q',
     ];
 
     public function page($page_id)

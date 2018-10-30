@@ -1,4 +1,12 @@
 {
+    "name": "davidpiesse/nova-statuspage",
+    "version": "0.0.2",
+    "description": "Laravel Nova StatusPage Card",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davidpiesse/nova-statuspage"
+    },
+    "license": "MIT",
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -7,11 +15,16 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "preversion": "",
+        "version": "npm run build:production && git add .",
+        "postversion": "git push && git push --tags"
     },
     "devDependencies": {
         "cross-env": "^5.0.0",
-        "laravel-mix": "^1.0"
+        "laravel-mix": "^1.0",
+        "npm": "^6.4.1",
+        "npm-version": "^1.1.0"
     },
     "dependencies": {
         "vue": "^2.5.0"

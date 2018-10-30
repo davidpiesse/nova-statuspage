@@ -17,7 +17,7 @@
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "preversion": "",
-        "version": "npm run build:production && git add .",
+        "version": "npm run prod && git add .",
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {

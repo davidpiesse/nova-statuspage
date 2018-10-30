@@ -32,7 +32,9 @@ This is where you set the StatusPage customer you are interested in.
 This can be one of two options:
 * The name of the provider. We currently allow for
     * cloudflare
-    * travisci
+    * dropbox
     * newrelic
+    * travisci
+    * twilio
 * The StatusPage ID for a customer; such as *yh6f0r4529hb*
 
